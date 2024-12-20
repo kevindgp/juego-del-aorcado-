@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuessMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>GuessMaster</h1>
+    <p class="description">¡Adivina la palabra antes de que el muñeco sea ahorcado!</p>
+    <canvas id="ahorcado" width="200" height="250"></canvas>
+    <p><strong>Pista:</strong> <span id="pista"></span></p>
+    <p><strong>Palabra:</strong> <span id="palabra-oculta"></span></p>
+    <p><strong>Puntaje:</strong> <span id="puntuacion">0</span></p>
+    <p><strong>Tiempo Restante:</strong> <span id="tiempo">60</span> segundos</p>
+    <input type="text" id="letra" placeholder="Ingresa una letra" maxlength="1">
+    <button id="guess-button">Adivinar</button>
+    <p id="mensaje"></p>
+    <button id="restart-button" class="hidden">Reiniciar Juego</button>
+    <div id="game-over-message" class="hidden">AHORCADO</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
